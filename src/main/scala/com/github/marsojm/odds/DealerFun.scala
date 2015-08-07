@@ -3,8 +3,8 @@ package com.github.marsojm.odds
 import scala.util.Random
 
 class Dealer {
-  val ranks = List(Ace(), Two(), Three(), Four(), Five(), Six(), Seven(), Eight(), Nine(), Ten(), Jack(), Queen(), King())
-  val suits = List(Hearts(), Diamonds(), Spades(), Clubs())
+  private val ranks = List(Ace(), Two(), Three(), Four(), Five(), Six(), Seven(), Eight(), Nine(), Ten(), Jack(), Queen(), King())
+  private val suits = List(Hearts(), Diamonds(), Spades(), Clubs())
 
   def makeDeck(): Deck = {
     val cards : List[Card] =
